@@ -1,36 +1,6 @@
-EESchema Schematic File Version 2
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-LIBS:hermeslite
+EESchema Schematic File Version 4
 LIBS:hermeslite-cache
-EELAYER 25 0
+EELAYER 26 0
 EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
@@ -45,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L R R3
+L hermeslite-rescue:R R3
 U 1 1 57194201
 P 6065 3420
 F 0 "R3" V 6145 3420 50  0000 C CNN
@@ -56,7 +26,7 @@ F 3 "" H 6065 3420 50  0000 C CNN
 	0    1    -1   0   
 $EndComp
 $Comp
-L CP_Small C11
+L hermeslite-rescue:CP_Small C11
 U 1 1 57194344
 P 5650 6020
 F 0 "C11" V 5625 5625 50  0000 L CNN
@@ -67,7 +37,7 @@ F 3 "" H 5650 6020 50  0000 C CNN
 	0    -1   1    0   
 $EndComp
 $Comp
-L C_Small C19
+L hermeslite-rescue:C_Small C19
 U 1 1 57196259
 P 7450 5145
 F 0 "C19" H 7225 5145 50  0000 L CNN
@@ -78,7 +48,7 @@ F 3 "" H 7450 5145 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C18
+L hermeslite-rescue:C_Small C18
 U 1 1 571996C9
 P 6065 3620
 F 0 "C18" V 5945 3550 50  0000 L CNN
@@ -89,7 +59,7 @@ F 3 "" H 6065 3620 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L C_Small C20
+L hermeslite-rescue:C_Small C20
 U 1 1 57199EC5
 P 6315 3770
 F 0 "C20" H 6405 3800 50  0000 L CNN
@@ -100,7 +70,7 @@ F 3 "" H 6315 3770 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L FB FB6
+L hermeslite-rescue:FB FB6
 U 1 1 57199EE6
 P 8175 3620
 F 0 "FB6" H 8050 3670 39  0000 C CNN
@@ -113,9 +83,11 @@ $EndComp
 Text Label 2290 2205 0    50   ~ 0
 ~PTT
 $Comp
-L +3V3 #PWR01
+L hermeslite-rescue:+3V3 #PWR01
 U 1 1 571A3187
 P 3125 6670
+AR Path="/571A3187" Ref="#PWR01"  Part="1" 
+AR Path="/595FEA2E/571A3187" Ref="#PWR01"  Part="1" 
 F 0 "#PWR01" H 3125 6520 50  0001 C CNN
 F 1 "+3V3" H 3125 6810 50  0000 C CNN
 F 2 "" H 3125 6670 50  0000 C CNN
@@ -126,7 +98,7 @@ $EndComp
 Text Notes 4360 6350 0    60   ~ 0
  SPKR\nOUTPUT
 $Comp
-L CONN_01X03 P1
+L hermeslite-rescue:CONN_01X03 P1
 U 1 1 594B75AB
 P 4875 6245
 F 0 "P1" V 5000 6245 50  0000 C CNN
@@ -137,7 +109,7 @@ F 3 "" H 4875 6245 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R R4
+L hermeslite-rescue:R R4
 U 1 1 594B9581
 P 7450 5395
 F 0 "R4" H 7550 5390 50  0000 C CNN
@@ -150,7 +122,7 @@ $EndComp
 Text Notes 9850 5060 0    60   ~ 0
 PHONE-L\nPHONE-R\nGND\n
 $Comp
-L FB FB8
+L hermeslite-rescue:FB FB8
 U 1 1 594C8DEA
 P 8175 4970
 F 0 "FB8" H 8050 5020 39  0000 C CNN
@@ -161,7 +133,7 @@ F 3 "" H 8175 4970 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L FB FB1
+L hermeslite-rescue:FB FB1
 U 1 1 594D995F
 P 990 2860
 F 0 "FB1" V 1090 2940 39  0000 C CNN
@@ -172,7 +144,7 @@ F 3 "" H 990 2860 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L C_Small C14
+L hermeslite-rescue:C_Small C14
 U 1 1 594EE577
 P 6325 4445
 F 0 "C14" H 6075 4505 50  0000 L CNN
@@ -183,7 +155,7 @@ F 3 "" H 6325 4445 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L C_Small C12
+L hermeslite-rescue:C_Small C12
 U 1 1 594EE6D5
 P 6050 4445
 F 0 "C12" H 5985 4720 50  0000 L CNN
@@ -194,7 +166,7 @@ F 3 "" H 6050 4445 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L C_Small C15
+L hermeslite-rescue:C_Small C15
 U 1 1 594EEC62
 P 6325 4645
 F 0 "C15" H 6105 4620 50  0000 L CNN
@@ -205,7 +177,7 @@ F 3 "" H 6325 4645 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L C_Small C13
+L hermeslite-rescue:C_Small C13
 U 1 1 594EED78
 P 6050 4845
 F 0 "C13" H 5980 4675 50  0000 L CNN
@@ -216,7 +188,7 @@ F 3 "" H 6050 4845 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L C_Small C9
+L hermeslite-rescue:C_Small C9
 U 1 1 594DB429
 P 5650 5670
 F 0 "C9" V 5700 5295 50  0000 L CNN
@@ -227,7 +199,7 @@ F 3 "" H 5650 5670 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L C_Small C10
+L hermeslite-rescue:C_Small C10
 U 1 1 594DBD28
 P 5650 5845
 F 0 "C10" V 5700 5450 50  0000 L CNN
@@ -238,7 +210,7 @@ F 3 "" H 5650 5845 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L C_Small C21
+L hermeslite-rescue:C_Small C21
 U 1 1 594E25D6
 P 7650 5145
 F 0 "C21" H 7750 5145 50  0000 L CNN
@@ -249,7 +221,7 @@ F 3 "" H 7650 5145 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R5
+L hermeslite-rescue:R R5
 U 1 1 594E25E2
 P 7650 5395
 F 0 "R5" H 7750 5390 50  0000 C CNN
@@ -264,7 +236,7 @@ SDA
 Text Label 2295 4245 0    50   ~ 0
 SCL
 $Comp
-L C_Small C4
+L hermeslite-rescue:C_Small C4
 U 1 1 594ECD7D
 P 4125 5045
 F 0 "C4" H 4215 5045 50  0000 L CNN
@@ -275,7 +247,7 @@ F 3 "" H 4125 5045 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L CP_Small C3
+L hermeslite-rescue:CP_Small C3
 U 1 1 594EDAE8
 P 3825 5045
 F 0 "C3" H 3640 5045 50  0000 L CNN
@@ -286,7 +258,7 @@ F 3 "" H 3825 5045 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C7
+L hermeslite-rescue:C_Small C7
 U 1 1 594EDDB5
 P 4775 5770
 F 0 "C7" H 4865 5770 50  0000 L CNN
@@ -297,7 +269,7 @@ F 3 "" H 4775 5770 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L CP_Small C6
+L hermeslite-rescue:CP_Small C6
 U 1 1 594EF1AC
 P 4480 5770
 F 0 "C6" H 4290 5770 50  0000 L CNN
@@ -310,7 +282,7 @@ $EndComp
 Text Notes 4465 6715 0    60   ~ 0
 1.8V
 $Comp
-L FB FB2
+L hermeslite-rescue:FB FB2
 U 1 1 594F32BC
 P 3455 5390
 F 0 "FB2" H 3455 5290 39  0000 C CNN
@@ -321,7 +293,7 @@ F 3 "" H 3455 5390 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L FB FB3
+L hermeslite-rescue:FB FB3
 U 1 1 594F33FB
 P 4100 5670
 F 0 "FB3" H 4100 5570 39  0000 C CNN
@@ -332,7 +304,7 @@ F 3 "" H 4100 5670 60  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L FB FB4
+L hermeslite-rescue:FB FB4
 U 1 1 594F34C1
 P 6325 5350
 F 0 "FB4" V 6410 5450 39  0000 C CNN
@@ -348,9 +320,11 @@ NoConn ~ 5275 3845
 NoConn ~ 5175 3845
 NoConn ~ 5075 3845
 $Comp
-L +3V3 #PWR02
+L hermeslite-rescue:+3V3 #PWR02
 U 1 1 59500593
 P 3310 5670
+AR Path="/59500593" Ref="#PWR02"  Part="1" 
+AR Path="/595FEA2E/59500593" Ref="#PWR02"  Part="1" 
 F 0 "#PWR02" H 3310 5520 50  0001 C CNN
 F 1 "+3V3" H 3310 5810 50  0000 C CNN
 F 2 "" H 3310 5670 50  0000 C CNN
@@ -359,7 +333,7 @@ F 3 "" H 3310 5670 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C1
+L hermeslite-rescue:C_Small C1
 U 1 1 59500C3B
 P 3825 5770
 F 0 "C1" H 3920 5760 50  0000 L CNN
@@ -370,9 +344,11 @@ F 3 "" H 3825 5770 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L +3V3 #PWR03
+L hermeslite-rescue:+3V3 #PWR03
 U 1 1 59501164
 P 6625 5470
+AR Path="/59501164" Ref="#PWR03"  Part="1" 
+AR Path="/595FEA2E/59501164" Ref="#PWR03"  Part="1" 
 F 0 "#PWR03" H 6625 5320 50  0001 C CNN
 F 1 "+3V3" H 6625 5610 50  0000 C CNN
 F 2 "" H 6625 5470 50  0000 C CNN
@@ -381,7 +357,7 @@ F 3 "" H 6625 5470 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C16
+L hermeslite-rescue:C_Small C16
 U 1 1 59501172
 P 6325 5670
 F 0 "C16" H 6075 5695 50  0000 L CNN
@@ -392,7 +368,7 @@ F 3 "" H 6325 5670 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L C_Small C8
+L hermeslite-rescue:C_Small C8
 U 1 1 595073B9
 P 4875 3245
 F 0 "C8" H 4975 3270 50  0000 L CNN
@@ -403,9 +379,11 @@ F 3 "" H 4875 3245 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3V3 #PWR04
+L hermeslite-rescue:+3V3 #PWR04
 U 1 1 59604695
 P 830 3295
+AR Path="/59604695" Ref="#PWR04"  Part="1" 
+AR Path="/595FEA2E/59604695" Ref="#PWR04"  Part="1" 
 F 0 "#PWR04" H 830 3145 50  0001 C CNN
 F 1 "+3V3" H 830 3435 50  0000 C CNN
 F 2 "" H 830 3295 50  0000 C CNN
@@ -414,7 +392,7 @@ F 3 "" H 830 3295 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR05
+L hermeslite-rescue:GND #PWR05
 U 1 1 5961EE40
 P 9345 1390
 F 0 "#PWR05" H 9345 1140 50  0001 C CNN
@@ -425,7 +403,7 @@ F 3 "" H 9345 1390 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L CONN_02X10 CN1
+L hermeslite-rescue:CONN_02X10 CN1
 U 1 1 5962892E
 P 1625 2555
 F 0 "CN1" H 1620 3120 60  0000 C CNN
@@ -438,7 +416,7 @@ F 5 "FRONTIO" H 1625 2555 60  0001 C CNN "Option"
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR06
+L hermeslite-rescue:GND #PWR06
 U 1 1 5963ADD4
 P 6325 5770
 F 0 "#PWR06" H 6325 5520 50  0001 C CNN
@@ -449,7 +427,7 @@ F 3 "" H 6325 5770 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L GND #PWR07
+L hermeslite-rescue:GND #PWR07
 U 1 1 5963B17E
 P 7450 5545
 F 0 "#PWR07" H 7450 5295 50  0001 C CNN
@@ -460,7 +438,7 @@ F 3 "" H 7450 5545 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L GND #PWR08
+L hermeslite-rescue:GND #PWR08
 U 1 1 5963B1F5
 P 7650 5545
 F 0 "#PWR08" H 7650 5295 50  0001 C CNN
@@ -471,7 +449,7 @@ F 3 "" H 7650 5545 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L GND #PWR09
+L hermeslite-rescue:GND #PWR09
 U 1 1 5963B291
 P 5850 6080
 F 0 "#PWR09" H 5850 5830 50  0001 C CNN
@@ -482,7 +460,7 @@ F 3 "" H 5850 6080 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L GND #PWR010
+L hermeslite-rescue:GND #PWR010
 U 1 1 5963BD89
 P 6850 4570
 F 0 "#PWR010" H 6850 4320 50  0001 C CNN
@@ -493,7 +471,7 @@ F 3 "" H 6850 4570 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L GND #PWR011
+L hermeslite-rescue:GND #PWR011
 U 1 1 5963BFD7
 P 6315 3870
 F 0 "#PWR011" H 6315 3620 50  0001 C CNN
@@ -504,7 +482,7 @@ F 3 "" H 6315 3870 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L GND #PWR012
+L hermeslite-rescue:GND #PWR012
 U 1 1 5963C3D3
 P 5075 3020
 F 0 "#PWR012" H 5075 2770 50  0001 C CNN
@@ -515,7 +493,7 @@ F 3 "" H 5075 3020 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L GND #PWR013
+L hermeslite-rescue:GND #PWR013
 U 1 1 5963D012
 P 4775 5870
 F 0 "#PWR013" H 4775 5620 50  0001 C CNN
@@ -526,7 +504,7 @@ F 3 "" H 4775 5870 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L GND #PWR014
+L hermeslite-rescue:GND #PWR014
 U 1 1 5963D222
 P 4480 5870
 F 0 "#PWR014" H 4480 5620 50  0001 C CNN
@@ -537,7 +515,7 @@ F 3 "" H 4480 5870 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L GND #PWR015
+L hermeslite-rescue:GND #PWR015
 U 1 1 5963D7B4
 P 3825 5870
 F 0 "#PWR015" H 3825 5620 50  0001 C CNN
@@ -548,7 +526,7 @@ F 3 "" H 3825 5870 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L GND #PWR016
+L hermeslite-rescue:GND #PWR016
 U 1 1 5963DADA
 P 4125 5145
 F 0 "#PWR016" H 4125 4895 50  0001 C CNN
@@ -559,7 +537,7 @@ F 3 "" H 4125 5145 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L GND #PWR017
+L hermeslite-rescue:GND #PWR017
 U 1 1 5963DB51
 P 3825 5145
 F 0 "#PWR017" H 3825 4895 50  0001 C CNN
@@ -570,7 +548,7 @@ F 3 "" H 3825 5145 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L FB FB7
+L hermeslite-rescue:FB FB7
 U 1 1 59644268
 P 8175 4770
 F 0 "FB7" H 8300 4710 39  0000 C CNN
@@ -581,7 +559,7 @@ F 3 "" H 8175 4770 60  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L SJ-43514-SMT J2
+L hermeslite-rescue:SJ-43514-SMT J2
 U 1 1 5964A43C
 P 9400 4920
 F 0 "J2" H 9400 5260 50  0000 C CNN
@@ -592,7 +570,7 @@ F 3 "" H 9550 4720 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L GND #PWR018
+L hermeslite-rescue:GND #PWR018
 U 1 1 5964D5CC
 P 8850 5270
 F 0 "#PWR018" H 8850 5020 50  0001 C CNN
@@ -603,7 +581,7 @@ F 3 "" H 8850 5270 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L FB FB5
+L hermeslite-rescue:FB FB5
 U 1 1 5966EF62
 P 8175 2205
 F 0 "FB5" H 8280 2155 39  0000 C CNN
@@ -614,7 +592,7 @@ F 3 "" H 8175 2205 60  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L LP2985 U1
+L hermeslite-rescue:LP2985 U1
 U 1 1 5968355D
 P 3600 6820
 F 0 "U1" H 3800 7070 50  0000 C CNN
@@ -625,7 +603,7 @@ F 3 "" H 3600 6820 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C2
+L hermeslite-rescue:C_Small C2
 U 1 1 59683A8C
 P 3125 6920
 F 0 "C2" H 2950 6845 50  0000 L CNN
@@ -636,7 +614,7 @@ F 3 "" H 3125 6920 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C5
+L hermeslite-rescue:C_Small C5
 U 1 1 59683B5E
 P 4250 7020
 F 0 "C5" H 4075 6920 50  0000 L CNN
@@ -647,7 +625,7 @@ F 3 "" H 4250 7020 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L GND #PWR019
+L hermeslite-rescue:GND #PWR019
 U 1 1 5968420D
 P 3125 7070
 F 0 "#PWR019" H 3125 6820 50  0001 C CNN
@@ -658,7 +636,7 @@ F 3 "" H 3125 7070 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L GND #PWR020
+L hermeslite-rescue:GND #PWR020
 U 1 1 5968429C
 P 4250 7120
 F 0 "#PWR020" H 4250 6870 50  0001 C CNN
@@ -669,7 +647,7 @@ F 3 "" H 4250 7120 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L CONN_01X05 P3
+L hermeslite-rescue:CONN_01X05 P3
 U 1 1 59693129
 P 9695 3420
 F 0 "P3" H 9690 3705 50  0000 C CNN
@@ -680,7 +658,7 @@ F 3 "" H 9695 3420 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR021
+L hermeslite-rescue:GND #PWR021
 U 1 1 596936FB
 P 9270 3695
 F 0 "#PWR021" H 9270 3445 50  0001 C CNN
@@ -693,7 +671,7 @@ $EndComp
 Text Notes 9795 3645 0    60   ~ 0
 PTT\nPHONE-R\nPHONE-L\nGND\nMIC
 $Comp
-L CONN_01X04 P2
+L hermeslite-rescue:CONN_01X04 P2
 U 1 1 59695BD4
 P 9695 1160
 F 0 "P2" H 9695 1410 50  0000 C CNN
@@ -728,7 +706,7 @@ Text Notes 2490 6135 0    50   ~ 0
 Text Notes 2495 6545 0    50   ~ 0
 <-
 $Comp
-L CP_Small C17
+L hermeslite-rescue:CP_Small C17
 U 1 1 596BB921
 P 6625 4645
 F 0 "C17" H 6700 4720 50  0000 L CNN
@@ -741,7 +719,7 @@ $EndComp
 Text Notes 6575 4920 0    50   ~ 0
 SizeB(3528)
 $Comp
-L GND #PWR022
+L hermeslite-rescue:GND #PWR022
 U 1 1 596BE9EB
 P 3315 4845
 F 0 "#PWR022" H 3315 4595 50  0001 C CNN
@@ -752,7 +730,7 @@ F 3 "" H 3315 4845 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L PWR_FLAG #FLG023
+L hermeslite-rescue:PWR_FLAG #FLG023
 U 1 1 596160D5
 P 4325 5670
 F 0 "#FLG023" H 4325 5765 50  0001 C CNN
@@ -763,7 +741,7 @@ F 3 "" H 4325 5670 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L PWR_FLAG #FLG024
+L hermeslite-rescue:PWR_FLAG #FLG024
 U 1 1 59618D7F
 P 6620 5175
 F 0 "#FLG024" H 6620 5270 50  0001 C CNN
@@ -774,7 +752,7 @@ F 3 "" H 6620 5175 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR025
+L hermeslite-rescue:GND #PWR025
 U 1 1 5961FAFF
 P 5850 4045
 F 0 "#PWR025" H 5850 3795 50  0001 C CNN
@@ -791,7 +769,7 @@ QFN-32
 Text Label 2290 2305 0    50   ~ 0
 PDN
 $Comp
-L GND #PWR026
+L hermeslite-rescue:GND #PWR026
 U 1 1 5962893B
 P 1190 2705
 F 0 "#PWR026" H 1190 2455 50  0001 C CNN
@@ -802,7 +780,7 @@ F 3 "" H 1190 2705 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L GND #PWR027
+L hermeslite-rescue:GND #PWR027
 U 1 1 5D44BBAB
 P 2270 2705
 F 0 "#PWR027" H 2270 2455 50  0001 C CNN
@@ -813,7 +791,7 @@ F 3 "" H 2270 2705 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Q_NMOS_GDS Q1
+L hermeslite-rescue:Q_NMOS_GDS Q1
 U 1 1 5D45DBD1
 P 4145 1710
 F 0 "Q1" H 4445 1760 50  0000 R CNN
@@ -824,7 +802,7 @@ F 3 "" H 4145 1710 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Q_NMOS_GDS Q2
+L hermeslite-rescue:Q_NMOS_GDS Q2
 U 1 1 5D45DE0A
 P 6410 1410
 F 0 "Q2" H 6710 1460 50  0000 R CNN
@@ -835,7 +813,7 @@ F 3 "" H 6410 1410 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR028
+L hermeslite-rescue:GND #PWR028
 U 1 1 5D47404A
 P 4245 1910
 F 0 "#PWR028" H 4245 1660 50  0001 C CNN
@@ -846,7 +824,7 @@ F 3 "" H 4245 1910 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L GND #PWR029
+L hermeslite-rescue:GND #PWR029
 U 1 1 5D474D81
 P 6510 1610
 F 0 "#PWR029" H 6510 1360 50  0001 C CNN
@@ -857,7 +835,7 @@ F 3 "" H 6510 1610 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L CONN_02X03 CN12
+L hermeslite-rescue:CONN_02X03 CN12
 U 1 1 5D483253
 P 1625 6445
 F 0 "CN12" H 1625 6645 50  0000 C CNN
@@ -869,7 +847,7 @@ F 3 "" H 1625 5245 50  0000 C CNN
 $EndComp
 NoConn ~ 1375 6545
 $Comp
-L GND #PWR030
+L hermeslite-rescue:GND #PWR030
 U 1 1 5D48D6D7
 P 1935 6700
 F 0 "#PWR030" H 1935 6450 39  0001 C CNN
@@ -892,7 +870,7 @@ NoConn ~ 1375 2605
 NoConn ~ 1375 2805
 NoConn ~ 1375 2905
 $Comp
-L R R2
+L hermeslite-rescue:R R2
 U 1 1 5D49EBB2
 P 6075 1615
 F 0 "R2" V 6155 1615 50  0000 C CNN
@@ -903,7 +881,7 @@ F 3 "" H 6075 1615 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L GND #PWR031
+L hermeslite-rescue:GND #PWR031
 U 1 1 5D49EBB8
 P 6075 1765
 F 0 "#PWR031" H 6075 1515 50  0001 C CNN
@@ -914,7 +892,7 @@ F 3 "" H 6075 1765 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L R R1
+L hermeslite-rescue:R R1
 U 1 1 5D4A6163
 P 3830 1915
 F 0 "R1" V 3910 1915 50  0000 C CNN
@@ -925,7 +903,7 @@ F 3 "" H 3830 1915 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L GND #PWR032
+L hermeslite-rescue:GND #PWR032
 U 1 1 5D4A6169
 P 3830 2065
 F 0 "#PWR032" H 3830 1815 50  0001 C CNN
@@ -936,7 +914,7 @@ F 3 "" H 3830 2065 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L PWR_FLAG #FLG033
+L hermeslite-rescue:PWR_FLAG #FLG033
 U 1 1 5D47195A
 P 2885 6720
 F 0 "#FLG033" H 2885 6815 50  0001 C CNN
@@ -947,7 +925,7 @@ F 3 "" H 2885 6720 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L PWR_FLAG #FLG034
+L hermeslite-rescue:PWR_FLAG #FLG034
 U 1 1 5D4730F3
 P 4480 5490
 F 0 "#FLG034" H 4480 5585 50  0001 C CNN
@@ -958,7 +936,7 @@ F 3 "" H 4480 5490 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L AK4951AEN U2
+L hermeslite-rescue:AK4951AEN U2
 U 1 1 594B544D
 P 5025 4595
 F 0 "U2" H 5825 3920 60  0000 C CNN
@@ -969,7 +947,7 @@ F 3 "" H 5225 4645 60  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L GND #PWR035
+L hermeslite-rescue:GND #PWR035
 U 1 1 5D476021
 P 4675 5490
 F 0 "#PWR035" H 4675 5240 50  0001 C CNN
@@ -987,7 +965,7 @@ Wire Wire Line
 	6625 4795 6625 4745
 Connection ~ 6325 4795
 Wire Wire Line
-	6200 4795 6625 4795
+	6200 4795 6325 4795
 Wire Wire Line
 	6200 4645 6200 4795
 Connection ~ 6625 4545
@@ -1000,16 +978,16 @@ Connection ~ 5075 6020
 Wire Wire Line
 	5075 6020 5550 6020
 Wire Wire Line
-	5075 5345 5075 6720
+	5075 5345 5075 5845
 Wire Wire Line
 	9495 3520 9270 3520
 Wire Wire Line
-	8325 3620 9495 3620
+	8325 3620 8640 3620
 Wire Wire Line
 	9270 3520 9270 3695
 Connection ~ 3125 7045
 Wire Wire Line
-	3125 7020 3125 7070
+	3125 7020 3125 7045
 Wire Wire Line
 	3350 7045 3125 7045
 Wire Wire Line
@@ -1023,21 +1001,21 @@ Wire Wire Line
 	3125 6820 3400 6820
 Connection ~ 3125 6720
 Wire Wire Line
-	3125 6670 3125 6820
+	3125 6670 3125 6720
 Wire Wire Line
-	2885 6720 3400 6720
+	2885 6720 3125 6720
 Wire Wire Line
 	7065 4770 7065 6345
 Wire Wire Line
 	7175 6245 7175 4970
 Wire Wire Line
-	8325 4970 8950 4970
+	8325 4970 8750 4970
 Wire Wire Line
-	8850 5070 8850 5270
+	8850 5070 8850 5170
 Wire Wire Line
 	8850 5070 8950 5070
 Wire Wire Line
-	4250 5670 4775 5670
+	4250 5670 4325 5670
 Wire Wire Line
 	5075 6720 4200 6720
 Wire Wire Line
@@ -1048,9 +1026,9 @@ Wire Wire Line
 Wire Wire Line
 	6625 5470 6625 5520
 Wire Wire Line
-	6325 5500 6325 5570
+	6325 5500 6325 5520
 Wire Wire Line
-	6325 4745 6325 5200
+	6325 4745 6325 4795
 Wire Wire Line
 	4675 2305 1875 2305
 Wire Wire Line
@@ -1087,17 +1065,17 @@ Wire Wire Line
 	2675 4445 4275 4445
 Connection ~ 3825 5670
 Wire Wire Line
-	3310 5670 3950 5670
+	3310 5670 3455 5670
 Connection ~ 7450 4770
 Connection ~ 7650 4970
 Wire Wire Line
-	7065 4770 8025 4770
+	7065 4770 7450 4770
 Wire Wire Line
 	4675 2305 4675 3845
 Connection ~ 3825 4945
 Connection ~ 4125 4945
 Wire Wire Line
-	3455 4945 4275 4945
+	3455 4945 3825 4945
 Wire Wire Line
 	7650 5045 7650 4970
 Wire Wire Line
@@ -1128,7 +1106,7 @@ Connection ~ 5850 5670
 Wire Wire Line
 	5750 5670 5850 5670
 Wire Wire Line
-	5850 4945 5850 6080
+	5850 4945 5850 5670
 Wire Wire Line
 	5775 4945 5850 4945
 Wire Wire Line
@@ -1158,20 +1136,20 @@ Wire Wire Line
 	6050 4345 5950 4345
 Connection ~ 6050 4545
 Wire Wire Line
-	5775 4545 6850 4545
+	5775 4545 6050 4545
 Wire Wire Line
 	4875 6045 4875 5345
 Wire Wire Line
 	4975 5345 4975 6045
 Connection ~ 6315 3620
 Wire Wire Line
-	6315 3420 6315 3670
+	6315 3420 6315 3620
 Wire Wire Line
 	6215 3420 6315 3420
 Wire Wire Line
-	7175 4970 8025 4970
+	7175 4970 7650 4970
 Wire Wire Line
-	6165 3620 8025 3620
+	6165 3620 6315 3620
 Wire Wire Line
 	1875 2205 8025 2205
 Wire Wire Line
@@ -1199,11 +1177,11 @@ Wire Wire Line
 Wire Wire Line
 	990  2305 990  1410
 Wire Wire Line
-	1175 1710 3945 1710
+	1175 1710 3830 1710
 Wire Wire Line
 	1175 2205 1175 1710
 Wire Wire Line
-	990  1410 6210 1410
+	990  1410 6075 1410
 Wire Wire Line
 	1375 6345 1300 6345
 Wire Wire Line
@@ -1230,7 +1208,7 @@ Connection ~ 6075 1410
 Wire Wire Line
 	6510 1210 9495 1210
 Wire Wire Line
-	830  3295 1875 3295
+	830  3295 990  3295
 Wire Wire Line
 	990  3010 990  3295
 Connection ~ 990  3295
@@ -1242,11 +1220,9 @@ Wire Wire Line
 	8750 3320 9495 3320
 Connection ~ 8750 4970
 Wire Wire Line
-	8325 4770 8950 4770
-Wire Wire Line
 	9495 1110 9345 1110
 Wire Wire Line
-	9345 1110 9345 1390
+	9345 1110 9345 1310
 Connection ~ 9345 1310
 Wire Wire Line
 	9495 1310 9345 1310
@@ -1272,12 +1248,12 @@ Wire Wire Line
 	4675 5490 4675 5345
 Connection ~ 4675 5490
 Wire Wire Line
-	3455 4945 3455 5240
+	3455 4945 3455 5160
 Wire Wire Line
 	3455 5540 3455 5670
 Connection ~ 3455 5670
 $Comp
-L PWR_FLAG #FLG036
+L hermeslite-rescue:PWR_FLAG #FLG036
 U 1 1 59615BAF
 P 3310 5160
 F 0 "#FLG036" H 3310 5255 50  0001 C CNN
@@ -1294,7 +1270,7 @@ Connection ~ 4325 5670
 Wire Wire Line
 	8745 3220 9495 3220
 $Comp
-L GND #PWR037
+L hermeslite-rescue:GND #PWR037
 U 1 1 5D4A123F
 P 4600 6045
 F 0 "#PWR037" H 4600 5795 50  0001 C CNN
@@ -1308,13 +1284,10 @@ Wire Wire Line
 	4775 6045 4600 6045
 Wire Wire Line
 	8855 3420 8855 4770
-Wire Wire Line
-	8855 4770 8850 4770
-Connection ~ 8850 4770
 Text Notes 9850 2295 0    60   ~ 0
 MIC\nPTT\nGND\n
 $Comp
-L SJ-43514-SMT J1
+L hermeslite-rescue:SJ-43514-SMT J1
 U 1 1 5D4ADB9C
 P 9400 2155
 F 0 "J1" H 9400 2495 50  0000 C CNN
@@ -1327,12 +1300,12 @@ $EndComp
 Wire Wire Line
 	8640 2005 8950 2005
 Wire Wire Line
-	8325 2205 8950 2205
+	8325 2205 8745 2205
 Wire Wire Line
 	8950 5170 8850 5170
 Connection ~ 8850 5170
 $Comp
-L GND #PWR038
+L hermeslite-rescue:GND #PWR038
 U 1 1 5D4B6575
 P 8850 2505
 F 0 "#PWR038" H 8850 2255 50  0001 C CNN
@@ -1343,7 +1316,7 @@ F 3 "" H 8850 2505 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	8850 2305 8850 2505
+	8850 2305 8850 2405
 Wire Wire Line
 	8850 2305 8950 2305
 Wire Wire Line
@@ -1355,4 +1328,81 @@ Connection ~ 8640 3620
 Wire Wire Line
 	8745 3220 8745 2205
 Connection ~ 8745 2205
+Wire Wire Line
+	6325 4795 6625 4795
+Wire Wire Line
+	6325 4795 6325 5175
+Wire Wire Line
+	6625 4545 6850 4545
+Wire Wire Line
+	5850 6020 5850 6080
+Wire Wire Line
+	5075 6020 5075 6720
+Wire Wire Line
+	3125 7045 3125 7070
+Wire Wire Line
+	3125 6720 3125 6820
+Wire Wire Line
+	3125 6720 3400 6720
+Wire Wire Line
+	6325 5520 6325 5570
+Wire Wire Line
+	3825 5670 3950 5670
+Wire Wire Line
+	7450 4770 8025 4770
+Wire Wire Line
+	7650 4970 8025 4970
+Wire Wire Line
+	3825 4945 4125 4945
+Wire Wire Line
+	4125 4945 4275 4945
+Wire Wire Line
+	5075 5845 5075 6020
+Wire Wire Line
+	5850 5845 5850 6020
+Wire Wire Line
+	5850 5670 5850 5845
+Wire Wire Line
+	6325 4545 6625 4545
+Wire Wire Line
+	6050 4545 6325 4545
+Wire Wire Line
+	6315 3620 6315 3670
+Wire Wire Line
+	6315 3620 8025 3620
+Wire Wire Line
+	1375 3295 1875 3295
+Wire Wire Line
+	6075 1410 6210 1410
+Wire Wire Line
+	990  3295 1375 3295
+Wire Wire Line
+	8750 4970 8950 4970
+Wire Wire Line
+	9345 1310 9345 1390
+Wire Wire Line
+	6325 5175 6325 5200
+Wire Wire Line
+	3830 1710 3945 1710
+Wire Wire Line
+	4480 5670 4775 5670
+Wire Wire Line
+	3455 5670 3825 5670
+Wire Wire Line
+	3455 5160 3455 5240
+Wire Wire Line
+	4325 5670 4480 5670
+Wire Wire Line
+	8850 5170 8850 5270
+Wire Wire Line
+	8850 2405 8850 2505
+Wire Wire Line
+	8640 3620 9495 3620
+Wire Wire Line
+	8745 2205 8950 2205
+Wire Wire Line
+	8325 4770 8855 4770
+Wire Wire Line
+	8855 4770 8950 4770
+Connection ~ 8855 4770
 $EndSCHEMATC
