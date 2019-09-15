@@ -98,15 +98,17 @@ $EndComp
 Text Notes 4460 6350 0    60   ~ 0
  SPKR\nOUTPUT
 $Comp
-L hermeslite_HL2:CONN_01X02 P1
+L hermeslite-rescue:CONN_01X02-hermeslite_HL2 P1
 U 1 1 594B75AB
 P 4925 6245
+AR Path="/594B75AB" Ref="P1"  Part="1" 
+AR Path="/595FEA2E/594B75AB" Ref="P1"  Part="1" 
 F 0 "P1" V 5050 6245 50  0000 C CNN
 F 1 "CONN_01X02" V 5025 6245 50  0001 C CNN
 F 2 "HERMESLITE:2x1" H 4925 6245 50  0001 C CNN
 F 3 "" H 4925 6245 50  0000 C CNN
 	1    4925 6245
-	0    1    1    0   
+	0    -1   1    0   
 $EndComp
 $Comp
 L hermeslite-rescue:R R4
